@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}Home | Automation Portal{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4">Welcome to Automation Portal</h1>
+    <p class="lead">Run your automation tools in the cloud with ease.</p>
+    <a href="{{ url_for('signup') }}" class="btn btn-primary btn-lg mt-3">Get Started</a>
+</div>
+{% endblock %}

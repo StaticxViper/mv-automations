@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Dashboard | Automation Portal{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-md-3">
+        <!-- Sidebar -->
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">Tool 1</a>
+            <a href="#" class="list-group-item list-group-item-action">Tool 2</a>
+            <a href="#" class="list-group-item list-group-item-action">Tool 3</a>
+            <a href="#" class="list-group-item list-group-item-action text-muted mt-3">Account</a>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <!-- Dynamic Content Area -->
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Tool 1 Settings</h4>
+                <p class="card-text">This is where the settings, history, and run options will appear for each tool.</p>
+                <button class="btn btn-success">Run Tool</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
