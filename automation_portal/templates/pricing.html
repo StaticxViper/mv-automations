@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block title %}Pricing | Automation Portal{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h2 class="mb-4">Choose a Plan</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Free</div>
+                <div class="card-body">
+                    <h4 class="card-title">$0 / month</h4>
+                    <p class="card-text">Basic access to 1 tool</p>
+                    <a href="{{ url_for('signup') }}" class="btn btn-outline-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white">Pro</div>
+                <div class="card-body">
+                    <h4 class="card-title">$15 / month</h4>
+                    <p class="card-text">Access to all tools + priority support</p>
+                    <a href="{{ url_for('signup') }}" class="btn btn-primary">Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Enterprise</div>
+                <div class="card-body">
+                    <h4 class="card-title">Custom Pricing</h4>
+                    <p class="card-text">Tailored solutions for businesses</p>
+                    <a href="{{ url_for('about') }}" class="btn btn-outline-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
